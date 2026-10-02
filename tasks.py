@@ -1,5 +1,6 @@
 tasks = []
-
+def mark_done(number):
+    tasks[number - 1]["done"] = True
 def add_task(title, subject):
     tasks.append({"title": title, "subject": subject, "done": False})
 
